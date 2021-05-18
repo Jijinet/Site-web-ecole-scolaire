@@ -1,0 +1,308 @@
+:root {
+  /* Fonts */
+  --roboto: "Roboto", sans-serif;
+  --nunito: "Nunito Sans", sans-serif;
+  --large-font: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+
+  /* Colors */
+  --blue: #003c81;
+  --yellow: #f2cf0f;
+  --text-color: #242424;
+  --light-gray: #f2f2f2;
+  --darker-gray: #f6f6f6;
+}
+
+
+
+.search-container{
+  
+ height:auto;
+ width: 100%;
+
+}
+
+.search-container .search-content{
+  height: auto;
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.search-content .search-section{
+    height: 100%;
+    width: 60%;
+   margin-bottom: 10rem;
+}
+
+.search-content .search-section a{
+    display: block;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+ text-decoration: underline;
+  font-family:var(--roboto) ;
+  font-size: 2rem;
+  color: var(--blue);
+  transition: color .5s;
+}
+
+.search-content .search-section a:hover{
+
+  color: #005cc5;
+
+}
+
+.search-content .search-section p{
+  
+
+  font-family: var(--nunito);
+  font-size: 1.1rem;
+  
+}
+
+#readmore{
+font-size:1.23rem;
+color:#005cc5;
+text-decoration:underline;
+padding-top: .5rem;
+padding-bottom: 2rem;
+}
+
+.line{
+border-bottom: rgb(214, 228, 255) 1px solid;
+
+}
+
+
+.search-content .sidebar {
+height: auto;
+width: 35%;
+
+}
+
+
+.sidebar .post-container {
+padding-top: .8rem;
+padding-bottom: 1rem;
+height: auto;
+display: flex;
+flex-direction: column;
+float: right;
+width: 100%;
+}
+
+.sidebar .post-container h3 {
+padding: 2rem 0;
+font-family: var(--roboto);
+font-size: 1.4rem;
+margin: 0 auto;
+color: var(--blue);
+
+
+}
+.post-container .post {
+background-color: var(--light-gray);
+border-radius: 5px;
+height: auto;
+margin: 0 auto;
+width: 65%;
+margin-bottom: 2rem;
+box-shadow: 0 0 6px rgb(190, 190, 190);
+margin-right: 1rem;
+}
+
+.post img {
+border-top: none;
+border-radius: 5px 5px 0px 0px;
+height: 250px;
+width: 100%;
+}
+
+.post h4 {
+font-family: var(--large-font);
+height: auto;
+font-size: 1.1rem;
+color: rgb(51, 51, 51);
+width: 100%;
+padding: 0.8rem;
+transition: all 0.2s;
+}
+.post h4:hover {
+color: #005cc5;
+}
+
+
+
+@media only screen and (max-width: 1240px) {
+.post-container .post {
+  background-color: var(--light-gray);
+  border-radius: 5px;
+  height: auto;
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 6px rgb(190, 190, 190);
+  margin-right: -1rem;
+}
+.sidebar .post-container h3 {
+
+  margin-right:1.5rem;
+
+}
+
+}
+
+@media only screen and (max-width: 1080px) {
+.post-container .post {
+
+  width: 85%;
+
+  margin-right: -2rem;
+}
+.sidebar .post-container h3 {
+
+  margin-right:.5rem;
+
+}
+
+}
+
+
+@media only screen and (max-width: 980px) {
+
+.sidebar .post-container {
+
+  align-items: flex-start;
+  
+}
+
+.sidebar .post-container h3 {
+
+  margin: 0;
+  margin-right:0;
+ 
+
+}
+.search-content .search-section{
+  height: 100%;
+  width: 100%;
+ 
+}
+
+.search-content .search-section a{
+
+font-size: 1.8rem;
+}
+
+
+.search-content {
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.search-content .sidebar {
+  width: 40%;
+}
+
+.post-container .post {
+  
+  float: left;
+  width: 90%;
+  /* flex-wrap: wrap; */
+ 
+}
+
+.post img {
+ 
+  height: 280px;
+
+}
+.search-section {
+ 
+  width: 100%;
+}
+
+.search-content {
+  
+  width: 85%;
+ 
+}
+
+
+}
+
+@media only screen and (max-width: 750px) {
+
+.search-content .sidebar {
+  width: 50%;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.search-content .sidebar {
+  width: 55%;
+}
+
+.search-content .sidebar {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.sidebar .post-container {
+  width: 100%;
+align-items: center;
+
+}
+
+.sidebar .post-container h3 {
+
+  margin: 0;
+  margin-right:0;
+ 
+
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 550px) {
+
+.search-content .sidebar {
+  width: 68%;
+}
+
+
+
+.post-container .post {
+float: none;
+margin-right: 0;
+width: 100%;
+/* flex-wrap: wrap; */
+
+}
+
+
+}
+
+@media only screen and (max-width: 450px) {
+
+.search-content .sidebar {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.search-content {
+  
+  width: 90%;
+ 
+}
+
+
+}

@@ -1,0 +1,182 @@
+
+
+:root {
+    /* Fonts */
+    --roboto: "Roboto", sans-serif;
+    --nunito: "Nunito Sans", sans-serif;
+    --large-font: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+  
+    /* Colors */
+    --blue: #003c81;
+    --yellow: #f2cf0f;
+    --text-color: #242424;
+    --light-gray: #f2f2f2;
+    --darker-gray: #f6f6f6;
+  }
+
+
+  .nav-container nav ul .search {
+    padding: 0 0px;
+    padding-left: 1rem;
+  }
+  .nav-container nav ul button {
+    background-color: var(--blue);
+    width:80%;
+    font-family: var(--roboto);
+    padding: .48rem .5rem;
+    font-size: .9rem;
+    margin-left: 1.5rem;
+    border: none;
+    border-radius: 3px;
+    transition: border 0.1s;
+  }
+  
+
+  .nav-container nav ul .search button {
+    width: 10rem;
+    top: -1px;
+    left: 80px;
+  
+  }
+  
+  
+  .nav-container nav ul .search input {
+    height: 2rem;
+    width: 11.5rem;
+    font-size: 1rem;
+  }
+  
+  
+  .nav-content .inscrit{
+    color: white;
+    transition: color 0.3s;
+  }
+
+
+  .nav-container nav ul .border:hover {
+    background-color: transparent;
+    border: solid 2px var(--blue);
+  }
+
+  .nav-container nav ul button:hover .inscrit {
+  color: var(--blue);
+    
+  }
+
+  .burger-menu .btn-inscrit:hover{
+    background-color: transparent;
+    border: solid 2px var(--blue);
+  }
+
+  .burger-menu .btn-inscrit:hover .inscrit{
+    color: var(--blue);
+  }
+
+
+  .burger-menu .btn-inscrit{
+    background-color: var(--blue);
+    font-family: var(--roboto);
+    padding: .48rem .4rem;
+    position: absolute;
+    font-size: .75rem;
+    right: 50%;
+    left: 30%;
+    right: 0;
+    top: 9px;
+    border: none;
+    border-radius: 3px;
+    transition: border 0.3s;
+  }
+  
+  .burger-menu .btn-inscrit .inscrit{
+    color: white;
+    transition: color 0.3s;
+  }
+
+
+
+@media only screen and (max-width: 1240px){
+    .header-content {
+      width: 95%;
+    }
+  
+    
+    .nav-container nav ul {
+      width: 95%;
+    }
+  
+  .nav-container nav ul button {
+    width:96%;
+  
+  }
+  
+  .nav-container nav ul .search button {
+   
+    top: -1px;
+    right: -100px;
+    
+  
+  }
+  
+  }
+  
+  
+  @media only screen and (max-width: 1150px){
+   
+    .nav-container nav ul button {
+      width:80%;
+      padding: .48rem .4rem;
+      font-size: .7rem;
+      margin-left: 1.5rem;
+  
+    }
+  
+  }
+  
+  @media only screen and (max-width: 1080px){
+  
+  .nav-container nav ul button {
+    width:90%;
+    padding: .4rem .3rem;
+    font-size: .7rem;
+    margin-left: 1.5rem;
+  
+  }
+  
+  
+  
+  }
+
+
+  @media only screen and (max-width: 980px) {
+
+    .burger-menu {
+      display: block;
+      width: 95%;
+    }
+  
+
+  }
+
+  @media only screen and (max-width: 580px) {
+  
+    .burger-menu .search input {
+      width: 38%;
+    }
+    .burger-menu .btn-inscrit{
+      background-color: var(--blue);
+      font-family: var(--roboto);
+      padding: .48rem .5rem;
+      position: absolute;
+      font-size: .7rem;
+      right: 50%;
+      left: 23%;
+      right: 0;
+      top: 11px;
+  
+     
+    }
+  
+    
+  }
+  

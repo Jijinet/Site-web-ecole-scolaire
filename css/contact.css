@@ -1,0 +1,709 @@
+:root {
+    /* Fonts */
+    --roboto: "Roboto", sans-serif;
+    --nunito: "Nunito Sans", sans-serif;
+    --large-font: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+  
+    /* Colors */
+    --blue: #003c81;
+    --yellow: #f2cf0f;
+    --text-color: #242424;
+    --light-gray: #f2f2f2;
+    --darker-gray: #f6f6f6;
+  }
+  .nav-container nav ul .search {
+  
+    padding: 0 0px;
+    padding-left: 1rem;
+  }
+  .nav-container nav ul button {
+    background-color: var(--blue);
+    width:80%;
+    font-family: var(--roboto);
+    padding: .48rem .5rem;
+    font-size: .9rem;
+    margin-left: 1.5rem;
+    border: none;
+    border-radius: 3px;
+    transition: border 0.3s;
+  }
+  
+  .nav-container nav ul .search button {
+    width: 10rem;
+    top: -1px;
+    left: 80px;
+  
+  }
+  
+  
+  .nav-container nav ul .search input {
+    height: 2rem;
+    width: 11.5rem;
+    font-size: 1rem;
+  }
+  
+  
+  .nav-content .inscrit{
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  
+  .nav-container nav ul .border:hover {
+    background-color: transparent;
+    border: solid 2px var(--blue);
+  }
+  
+  .nav-container nav ul button:hover .inscrit {
+  color: var(--blue);
+    
+  }
+  
+  .burger-menu .btn-inscrit:hover{
+    background-color: transparent;
+    border: solid 2px var(--blue);
+  }
+  
+  .burger-menu .btn-inscrit:hover .inscrit{
+    color: var(--blue);
+  }
+  
+  
+  .burger-menu .btn-inscrit{
+    background-color: var(--blue);
+    font-family: var(--roboto);
+    padding: .48rem .4rem;
+    position: absolute;
+    font-size: .75rem;
+    right: 50%;
+    left: 30%;
+    right: 0;
+    top: 9px;
+    border: none;
+    border-radius: 3px;
+    transition: border 0.3s;
+  }
+  
+  .burger-menu .btn-inscrit .inscrit{
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  
+  
+  .contact-container{
+    height: 1380px;
+    width: auto;
+    position: relative;
+    
+  }
+  
+  .contact-container h1{
+    color: var(--blue);
+    font-family: var(--roboto);
+    text-align: center;
+    padding: 3rem 0;
+    letter-spacing: .2rem;
+  }
+  
+  .contact {
+    background-image: url('../assets/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 70%;
+    width: 100%;
+    transform: skewY(-5deg);
+  
+  
+  }
+  
+  .contact-form{
+  transform: skewY(5deg);
+  height: auto;
+  position: absolute;
+  top: 15%;
+  display: flex;
+  left: 35%;
+  width: 650px;
+  }
+  
+  
+  .contact-form .inputs{
+  width: 70%;
+  }
+  
+  
+  .inputs{
+  display: flex;
+  flex-direction: column;
+  
+  }
+  
+  .inputs select,textarea{
+  margin:1.5rem 0;
+  background-color: rgba(0, 0, 0, 0.781);
+  border: none;
+  padding: .5rem .5rem;
+  color:var(--light-gray);
+  font-family: var(--nunito);
+  font-size: 1.1rem;
+  }
+  
+  .inputs input,select{
+  margin:1.5rem 0;
+  width: 100%;
+  padding: .5rem .5rem;
+  background-color: rgba(0, 0, 0, 0.781);
+  border: none;
+  color:var(--light-gray);
+  font-family: var(--nunito);
+  font-size: 1.2rem;
+  }
+  select > option {
+  background: rgb(36, 36, 36);
+  font-size: 1.1rem;
+  
+  }
+  
+  .inputs select {
+  cursor: pointer;
+  }
+  
+  
+  
+  .inputs .btn{
+  background-color: white;
+  border-radius: 3px;
+  color: rgb(20, 20, 20);
+  font-family: var(--roboto);
+  padding: .8rem .8rem;
+  cursor: pointer;
+  }
+  
+  
+  .input::placeholder{
+  color:var(--light-gray);
+  font-family: var(--nunito);
+  }
+  
+  p{
+    font-size:1.1rem;
+    font-family:var(--nunito);
+    padding:.1rem 0;
+    padding-left:.5rem;
+    border-radius: 3px;
+  }
+
+  
+form i{
+  padding-right: .5rem;
+  
+}
+  
+  .error{
+    color: rgb(153, 0, 0);
+    border: rgb(182, 0, 0) solid 1.95px;
+    background-color: rgb(255, 199, 199);
+  }
+  
+  .success{
+    color: rgb(0, 153, 0);
+    border: rgb(0, 182, 0) solid 1.95px;
+  background-color: rgb(199, 255, 199);
+    font-size:1.2rem;
+    font-family:var(--nunito);
+    padding:.3rem 0;
+    grid-column-start: span 2;
+    padding-left: .5rem;
+   
+  }
+  
+  
+  @media only screen and (max-width: 1240px){
+  
+  
+  .contact-container{
+    height: 900px;
+   
+    
+  }
+  
+  .contact-container h1{
+  
+    font-size: 2rem;
+    padding: 2.5rem 0;
+    letter-spacing: .2rem;
+  }
+  
+  .contact {
+    
+  height: 68%;
+  width: 100%;
+  margin: 2rem 0 1.5rem 0;
+  
+  }
+  
+  .contact-form{
+    top: 20%;
+    margin:2rem 0;
+    left: 23%;
+    width: 550px;
+  }
+  
+  
+  .labels label{
+  margin:1.5rem 0;
+  margin-left:6rem;
+  font-size: 1.1rem;
+  width: 40%;
+  
+  }
+  
+  .inputs select,textarea{
+  margin:.8rem 0;
+  
+  padding: .5rem .5rem;
+  
+  font-size: 1rem;
+  width:100%;
+  }
+  
+  .inputs input,select{
+  margin:1rem 0;
+  width:100%;
+  padding: .5rem .5rem;
+  font-size: 1rem;
+  }
+  select > option {
+  background: rgb(36, 36, 36);
+  font-size: 1.1rem;
+  }
+  
+  
+  .inputs .btn{
+  
+  padding: .6rem .6rem;
+  
+  }
+  
+  .header-content {
+  width: 95%;
+  }
+  
+  
+  .nav-container nav ul {
+  width: 95%;
+  }
+  
+  .nav-container nav ul button {
+  width:95%;
+  
+  }
+  
+  
+  }
+  
+  @media only screen and (max-width: 1150px){
+  
+  .nav-container nav ul button {
+    width:80%;
+    padding: .48rem .4rem;
+    font-size: .7rem;
+    margin-left: 1.5rem;
+  
+  }
+  
+  }
+  
+  @media only screen and (max-width: 1080px){
+  
+  .contact-form{
+    top: 20%;
+    margin:2rem 0;
+    left: 20%;
+    width: 500px;
+  }
+  
+  .contact {
+  
+  background-attachment: local;
+  
+  
+  }
+  
+  .nav-container nav ul {
+  max-width: 95%;
+  }
+  
+  .nav-container nav ul {
+  width: 95%;
+  }
+  
+  
+  .nav-container nav ul button {
+  width:95%;
+  font-size: .78rem;
+  }
+  
+  .nav-container nav ul button {
+  width:90%;
+  padding: .4rem .3rem;
+  font-size: .7rem;
+  margin-left: 1.5rem;
+  
+  }
+  
+  }
+  
+  
+  @media only screen and (max-width: 980px) {
+  
+  .burger-menu {
+  display: block;
+  width: 95%;
+  }
+  
+  }
+  
+  @media only screen and (max-width: 850px){
+  
+  
+  .contact-container{
+  height: 750px;
+  
+  
+  }
+  
+  .contact-container h1{
+  
+  font-size: 1.5rem;
+  padding: 2.5rem 0;
+  letter-spacing: .2rem;
+  }
+  
+  .contact {
+  
+  height: 65%;
+  width: 100%;
+  margin: 2rem 0 1.5rem 0;
+  
+  }
+  
+  .contact-form{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    margin:2rem 0;
+    left: 35%;
+    width: 650px;
+  }
+  
+  
+  .labels label{
+  margin:1.3rem 0;
+  margin-left:8rem;
+  font-size: .8rem;
+  width: 30%;
+  
+  }
+  
+  .inputs select,textarea{
+  margin:.8rem 0;
+  
+  padding: .4rem .4rem;
+  
+  font-size: .8rem;
+  width:70%;
+  }
+  
+  .inputs input,select{
+  margin:.8rem 0;
+  width:70%;
+  padding: .4rem .4rem;
+  font-size: .8rem;
+  }
+  select > option {
+  background: rgb(36, 36, 36);
+  font-size: .8rem;
+  }
+  
+  
+  .inputs .btn{
+  
+  padding: .5rem .5rem;
+  
+  }
+  
+  
+  
+  }
+  
+  @media only screen and (max-width: 650px){
+  .contact-form{
+    top: 18%;
+    margin:2rem 0;
+    left: 0;
+    width: 500px;
+    
+  }
+  
+  .contact-container{
+    height: 650px;
+  
+  }
+  
+  .contact-container h1{
+  
+    font-size: 1.3rem;
+    padding: 2rem 0;
+    letter-spacing: .2rem;
+  }
+  
+  
+  .contact {
+  
+  height: 70%;
+  width: 100%;
+  margin: 1rem 0 1.5rem 0;
+  
+  }
+  
+  
+  
+  }
+  
+  
+  @media only screen and (max-width: 580px) {
+  .burger-menu .btn-inscrit{
+    background-color: var(--blue);
+    font-family: var(--roboto);
+    padding: .48rem .5rem;
+    position: absolute;
+    font-size: .7rem;
+    right: 50%;
+    left: 23%;
+    right: 0;
+    top: 11px;
+   
+  }
+  
+  .burger-menu .search input {
+    width: 38%;
+  }
+  }
+  
+  
+  @media only screen and (max-width: 530px){
+  
+  
+  .contact-form{
+    top: 20%;
+    margin:2rem 0;
+    left: 5%;
+    width: 400px;
+    
+  }
+  
+  .contact-container{
+    height: 600px;
+  
+  }
+  
+  
+  
+  .contact {
+  
+  height: 65%;
+  width: 100%;
+  margin: 1rem 0 1.5rem 0;
+  
+  }
+  
+  
+  .labels label{
+    margin:1rem 0;
+    margin-left:5.5rem;
+    font-size: .7rem;
+    width: 35%;
+    
+    
+    }
+    
+    .inputs select,textarea{
+    margin:.8rem 0;
+    
+    padding: .3rem .3rem;
+    
+    font-size: .7rem;
+    width:80%;
+    }
+    
+    .inputs input,select{
+    margin:.5rem 0;
+    width:80%;
+    padding: .3rem .3rem;
+    font-size: .7rem;
+    }
+    select > option {
+    background: rgb(36, 36, 36);
+    font-size: .7rem;
+    }
+    
+    
+    .inputs .btn{
+    
+    padding: .5rem .5rem;
+    
+    }
+  
+  }
+  
+  
+  @media only screen and (max-width: 460px){
+  
+  
+  .contact-form{
+    top: 20%;
+    margin:2rem 0;
+    left: 5%;
+    width: 350px;
+   
+  }
+  
+  .contact-container h1{
+  
+    font-size: 1.1rem;
+    padding: 2rem 0;
+    letter-spacing: .2rem;
+  }
+  
+  
+  
+  .labels label{
+    margin:1rem 0;
+    margin-left:4.5rem;
+    font-size: .7rem;
+    width: 35%;
+  
+    
+    }
+  
+  }
+  
+  
+  
+  @media only screen and (max-width: 400px){
+  
+  
+  .contact-container{
+    height: 550px;
+   
+  }
+  
+  
+  
+  .contact {
+  
+  height: 70%;
+  width: 100%;
+  margin: 1rem 0 1.5rem 0;
+  
+  }
+  
+  .contact-form{
+    top: 20%;
+    margin:2rem 0;
+    left: 0;
+    width: 300px;
+  
+  }
+  
+  .inputs select,textarea{
+    margin:.8rem 0;
+    
+    padding: .3rem .3rem;
+    
+    font-size: .7rem;
+    width:100%;
+    }
+    
+    .inputs input,select{
+    margin:.5rem 0;
+    width:100%;
+    padding: .3rem .3rem;
+    font-size: .7rem;
+    }
+  
+    
+  .labels label{
+    margin:1rem 0;
+    margin-left:3rem;
+    font-size: .7rem;
+    width: 35%;
+  
+    
+    }
+  
+  }
+  
+  
+  
+  @media only screen and (max-width: 350px){
+  
+  
+  .contact-form{
+    top: 20%;
+    margin:2rem 0;
+    left: -3%;
+    width: 300px;
+  
+  }
+  
+  .contact-container h1{
+  
+    font-size: .8rem;
+    padding: 2rem 0;
+    letter-spacing: .2rem;
+  }
+  
+  
+  .inputs select,textarea{
+    margin:.8rem 0;
+    
+    padding: .3rem .3rem;
+    
+    font-size: .7rem;
+    width:95%;
+    }
+    
+    .inputs input,select{
+    margin:.5rem 0;
+    width:95%;
+    padding: .3rem .3rem;
+    font-size: .7rem;
+    }
+  
+    
+  .labels label{
+    margin:1rem 0;
+    margin-left:2rem;
+    font-size: .7rem;
+    width: 35%;
+  
+    
+    }
+    select > option {
+      background: rgb(36, 36, 36);
+      font-size: .7rem;
+      }
+      
+      
+      .inputs .btn{
+      
+      padding: .3rem .3rem;
+      
+      }
+  
+  }

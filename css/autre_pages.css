@@ -1,0 +1,139 @@
+:root {
+    /* Fonts */
+    --roboto: "Roboto", sans-serif;
+    --nunito: "Nunito Sans", sans-serif;
+    --large-font: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+  
+    /* Colors */
+    --blue: #003c81;
+    --yellow: #f2cf0f;
+    --text-color: #242424;
+    --light-gray: #f2f2f2;
+    --darker-gray: #f6f6f6;
+  }
+
+  .page-container{
+      height: 100%;
+      width: 100%;
+      padding-bottom: 5rem;
+  }
+
+  .container-page{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+}
+
+.container-page h1{
+    font-size: 2rem;
+    font-family: var(--roboto);
+    color: var(--blue);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.page-container h1{
+    font-size: 2rem;
+    font-family: var(--roboto);
+    color: var(--blue);
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.container-page li{
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+  .page-container li{
+      list-style: disc;
+      margin-left: 2rem;
+  }
+
+
+
+.page-container .page-content{
+
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.container-page .content-page{
+    margin-left: 4rem;
+    width: 65%;
+    margin-top: 2rem;
+  }
+   
+
+.page-content h2{
+    font-size: 1.5rem;
+    font-family: var(--roboto);
+    color: var(--blue);
+    padding-bottom: 1rem;
+}
+
+.page{
+    background-color:var(--light-gray);
+    padding: 1rem 1rem;
+    border-radius: 3px;
+    margin-top: 3rem;
+}
+
+.container-page li,p{
+    font-family: var(--nunito);
+    margin-top: .3rem;
+}
+
+
+.page-container li,p{
+    font-family: var(--nunito);
+    margin-top: .3rem;
+}
+
+.content-page,.side-bar{
+    margin-right: 2rem;
+}
+
+.side-bar{
+    padding-top: 5rem;
+    padding-left: 2rem;
+    width: 30%;
+}
+.side-bar h2{
+    text-align: center;
+    font-family: var(--roboto);
+    color: var(--blue);
+}
+
+
+@media only screen and (max-width: 980px) {
+
+    .container-page{
+       flex-direction: column;
+    }
+    .container-page .content-page{
+        margin-left: 2rem;
+        width: 90%;
+        padding-right: 2rem;
+      
+      }
+
+      .side-bar{
+        padding-top: 5rem;
+        padding-left: 0rem;
+        width: 90%;
+    }
+
+    .side-bar h2{
+        text-align: start;
+        margin-left: 2rem;
+        padding-top: -3rem;
+    }
+
+}
+
+
+
+

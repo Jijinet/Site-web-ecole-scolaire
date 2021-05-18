@@ -1,0 +1,397 @@
+:root {
+    /* Fonts */
+    --roboto: "Roboto", sans-serif;
+    --nunito: "Nunito Sans", sans-serif;
+    --large-font: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+  
+    /* Colors */
+    --blue: #003c81;
+    --yellow: #f2cf0f;
+    --text-color: #242424;
+    --light-gray: #f2f2f2;
+    --darker-gray: #f6f6f6;
+  }
+  .nav-container nav ul .search {
+  
+    padding: 0 0px;
+    padding-left: 1rem;
+  }
+  .nav-container nav ul button {
+    background-color: var(--blue);
+    width:80%;
+    font-family: var(--roboto);
+    padding: .48rem .5rem;
+    font-size: .9rem;
+    margin-left: 1.5rem;
+    border: none;
+    border-radius: 3px;
+    transition: border 0.3s;
+  }
+  
+  .nav-container nav ul .search button {
+    width: 10rem;
+    top: -1px;
+    left: 80px;
+  
+  }
+  
+  
+  .nav-container nav ul .search input {
+    height: 2rem;
+    width: 11.5rem;
+    font-size: 1rem;
+  }
+  
+  
+  .nav-content .inscrit{
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  
+  .nav-container nav ul .border:hover {
+    background-color: transparent;
+    border: solid 2px var(--blue);
+  }
+  
+  .nav-container nav ul button:hover .inscrit {
+  color: var(--blue);
+    
+  }
+  
+  .burger-menu .btn-inscrit:hover{
+    background-color: transparent;
+    border: solid 2px var(--blue);
+  }
+  
+  .burger-menu .btn-inscrit:hover .inscrit{
+    color: var(--blue);
+  }
+  
+  
+  .burger-menu .btn-inscrit{
+    background-color: var(--blue);
+    font-family: var(--roboto);
+    padding: .48rem .4rem;
+    position: absolute;
+    font-size: .75rem;
+    right: 50%;
+    left: 30%;
+    right: 0;
+    top: 9px;
+    border: none;
+    border-radius: 3px;
+    transition: border 0.3s;
+  }
+  
+  .burger-menu .btn-inscrit .inscrit{
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  
+  
+  .inscrit-container{
+    height: 1200px;
+    width: auto;
+    position: relative;
+    
+  }
+  
+  .inscrit-container h1{
+    color: var(--blue);
+    font-family: var(--roboto);
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    letter-spacing: .2rem;
+  }
+
+  .inscrit-container h2{
+    color: var(--blue);
+    font-family: var(--nunito);
+    text-align: center;
+    padding: 1rem 0;
+    padding-bottom: 4rem;
+    letter-spacing: .2rem;
+  }
+  
+  .inscrit-content {
+    background-image: url('../assets/inscrit.jpg');
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  transform: skewY(-5deg);
+  
+  
+  }
+
+  .inscrit-form{
+    transform: skewY(5deg);
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    width: 50%;
+    }
+  
+  /* .inscrit-form{
+  transform: skewY(5deg);
+  height: auto;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  left: 28%;
+  width: 650px;
+  } */
+  
+  
+  .inscrit-form .inputs{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  }
+
+ 
+ .inputs textarea{
+    margin-bottom: -.3rem;
+    grid-column-start: span 2;
+  }
+
+  .error.textarea{
+    grid-column-start: span 2;
+  }
+  
+  .inputs select,textarea{
+  margin:1.5rem 0;
+  background-color:var(--light-gray);
+  border: none;
+  padding: .5rem .5rem;
+  color: rgba(0, 0, 0, 0.781);
+  font-family: var(--nunito);
+  }
+
+  .inputs input,select,textarea{
+  font-size: 1.2rem;
+  }
+  
+  .inputs input,select{
+  margin:1.5rem 0;
+  width: 100%;
+  padding: .5rem .5rem;
+  background-color:var(--light-gray);
+  border: none;
+  color: rgba(0, 0, 0, 0.781);
+  font-family: var(--nunito);
+  
+  }
+  select > option {
+    background-color:var(--light-gray);
+  font-size: 1.1rem;
+  
+  }
+  
+  .inputs select {
+  cursor: pointer;
+  }
+
+  .input-container{
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 60% 60% ;
+    
+  }
+  
+  
+  
+  .inputs .btn{
+  background-color: var(--yellow) ;
+  border-radius: 3px;
+  color: rgb(20, 20, 20);
+  font-family: var(--roboto);
+  padding: .8rem .8rem;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  grid-column-start: span 2;
+    
+  }
+  
+  
+  .input::placeholder{
+    color: rgba(0, 0, 0, 0.781);
+  font-family: var(--nunito);
+  }
+  
+  p{
+    font-size:1.1rem;
+    font-family:var(--nunito);
+    padding:.1rem 0;
+    padding-left:.5rem;
+    border-radius: 3px;
+  }
+
+  
+form i{
+  padding-right: .5rem;
+  
+}
+  
+  .error{
+    color: rgb(153, 0, 0);
+    border: rgb(182, 0, 0) solid 1.95px;
+    background-color: rgb(255, 199, 199);
+  }
+  
+  .success{
+    color: rgb(0, 153, 0);
+    border: rgb(0, 182, 0) solid 1.95px;
+  background-color: rgb(199, 255, 199);
+    font-size:1.2rem;
+    font-family:var(--nunito);
+    padding:.3rem 0;
+    grid-column-start: span 2;
+    padding-left: .5rem;
+   
+  }
+
+  .delete{
+    color: rgb(196, 0, 0);
+    }
+    
+    .edit{
+    color: green;
+    }
+    
+    .edit:hover,.delete:hover{
+      text-decoration: underline;
+    }
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);;
+}
+.grid > span{
+  padding-bottom: 8px 4px;
+  border-bottom: 2px solid rgb(216, 216, 216);
+  padding:1rem .5rem;
+
+}
+
+.grid span strong{
+  font-size: 1.2rem;
+  color: var(--blue);
+  font-family: var(--roboto);
+}
+
+.grid span{
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-family: var(--nunito);
+}
+
+
+  
+  @media only screen and (max-width: 1080px){
+    .inscrit-form{
+   
+      width: 55%;
+      }
+  
+  }
+  
+  
+  @media only screen and (max-width: 980px) {
+    .inscrit-form{
+   
+      width: 65%;
+      }
+
+  
+  }
+  
+  @media only screen and (max-width: 850px){
+    .inscrit-form{
+   
+      width: 80%;
+      }
+      .inscrit-container h1{
+        font-size: 1.5rem;
+      }
+    
+      .inscrit-container h2{
+      font-size: 1.3rem;
+      }
+
+      .inputs input,select,textarea{
+        font-size: 1.1rem;
+        }
+        
+        select > option {
+        
+        font-size: 1rem;
+        
+        }
+        
+        .inputs .btn{
+      font-size: 1.1rem !important;
+          
+        }
+        p{
+          font-size:1rem;
+        }
+
+
+
+    
+
+  }
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 650px){
+
+    .input-container{
+      display: block;
+    width: 80%;
+    }
+   
+      .inscrit-form .inputs{
+        justify-content: center;
+        width: 100%;
+        }
+      textarea{
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+      .inscrit-container{
+        height: 1550px;
+        
+      }
+      .error.textarea{
+        margin-top: 1.5rem;
+      }
+  
+  
+  }
+
+  
+  
+  @media only screen and (max-width: 460px){
+  
+    .input-container{
+      display: block;
+    width: 95%;
+    }
+  
+  }

@@ -1,0 +1,1001 @@
+:root {
+    /* Fonts */
+    --roboto: "Roboto", sans-serif;
+    --nunito: "Nunito Sans", sans-serif;
+    --large-font: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+  
+    /* Colors */
+    --blue: #003c81;
+    --yellow: #f2cf0f;
+    --text-color: #242424;
+    --light-gray: #f2f2f2;
+    --darker-gray: #f6f6f6;
+  }
+  
+  .nav-container nav ul .search {
+    padding: 0 0px;
+    padding-left: 1rem;
+  }
+  
+  .nav-container nav ul .search button {
+    top: 7px;
+    right: 6px;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+  }
+  
+  .container {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .ecole-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .ecole-title {
+    position: absolute;
+    margin: 2rem auto;
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+     background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    translate: opacity 0.5s ease;
+  }
+  
+  .ecole-title img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .current {
+    opacity: 1;
+  }
+  
+  .nixt {
+    position: absolute;
+    top: 310px;
+    right: 16rem;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    background-color: transparent;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.692);
+  }
+  
+  .priv {
+    position: absolute;
+    top: 310px;
+    left: 16rem;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 2;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.692);
+  }
+  
+  .empty {
+    height: 50%;
+  }
+  
+  .ecole-title .ecole-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .ecole-title .ecole-content h3 {
+    background-color: rgba(255, 255, 255, 0.63);
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    width: 60%;
+    color: var(--blue);
+    text-align: center;
+  
+    font-family: var(--roboto);
+  }
+  
+  .ecole-title .title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    width: 70%;
+  }
+  
+  .ecole-title p {
+    margin: 2.5rem 0;
+    color: white;
+    font-family: var(--roboto);
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+  }
+  
+  .ecole-title button {
+    border: none;
+    background-color: var(--blue);
+    padding: 0.8rem 2rem;
+    font-family: var(--roboto);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ecole-title button a {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+  
+  .ecole-title button:hover {
+    background-color: #004da5;
+  }
+  
+  .filiere-container {
+    height: 680px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+  
+  .infos p{
+    color: var(--blue);
+  
+  }
+  .infos span{
+    color: rgb(184, 0, 0);
+  }
+  
+  .text-acc{
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-acc img{
+    height: 12%;
+    width: 12%;
+    align-self: center;
+  }
+  
+  
+  .filiere-content {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+  height: 90%;
+    width: 70%;
+  }
+  
+  .filiere-container h3 {
+    text-align: center;
+    color: var(--blue);
+    font-family: var(--roboto);
+    padding: 1rem 0;
+  }
+  
+  .filiere-container .specialite {
+    display: flex;
+    width: 100%;
+  }
+  
+  .specialite h4 {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    align-self: center;
+    font-family: var(--roboto);
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    margin-right: 3rem;
+    transition: all 0.5s;
+  }
+  
+  .specialite h4:hover {
+    background-color: var(--blue);
+    color: white;
+  }
+  
+  h4.blue {
+    background-color: var(--blue);
+    color: white;
+  }
+  
+  .filiere-content .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--light-gray);
+    overflow-y: auto;
+    border-top: 5px solid var(--blue);
+  }
+  
+  .content{
+    display: none;
+  }
+  
+  .content:nth-child(2){
+    display: block;
+  }
+  
+  #scroll::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--light-gray);
+  }
+  
+  #scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(17, 17, 17);
+  }
+  
+  .section h2 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: var(--roboto);
+    font-size: 1.3rem;
+    color: var(--blue);
+  }
+  
+  .domaine-content {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin-top: 1.5rem;
+    background-color: var(--light-gray);
+    border-radius: 3px;
+    height: 100%;
+    width: 96%;
+    margin: 0 auto;
+  }
+  
+  .domaine-content p {
+    font-size: 1.1rem;
+    font-family: var(--nunito);
+  }
+  
+  .domaine-content p:first-child {
+    padding-bottom: 1.5rem;
+  }
+  
+  .d-content img {
+    height: auto;
+    width: 40%;
+  }
+  
+  .d-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .d-content.cn1 p {
+    margin-left: 2rem;
+    height: auto;
+    width: 50%;
+  }
+  
+  .d-content.cn2 {
+    margin-top: 2rem;
+  }
+  
+  .d-content.cn2 img {
+    margin-left: 3rem;
+  }
+  
+  .d-content.cn2 p {
+    margin-right: 2rem;
+    width: 52%;
+  }
+  
+  .filiere-content .content .btn {
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    color: var(--blue);
+    font-family: var(--roboto);
+    font-size: 1.3rem;
+    text-decoration: underline;
+  }
+  
+  .filiere-container .content .btn:hover {
+    color: var(--yellow);
+  }
+  
+  .infos-container {
+    min-height: 200px;
+    height: 450px;
+    margin-top: 9rem;
+  }
+  .infos-container h3 {
+    text-align: center;
+    color: var(--blue);
+    font-family: var(--roboto);
+  }
+  
+  .infos-content {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    height: 65%;
+    margin-top: 1.5rem;
+  }
+  
+  .infos-content .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .infos-content .card i {
+    font-size: 2rem;
+    color: var(--yellow);
+    background-color: var(--blue);
+    padding: 0.8rem 2rem;
+  }
+  .infos-content .card.message p:nth-child(3) {
+    width: auto;
+    padding: 1rem 1rem;
+  }
+  
+  .infos-content .card p {
+    color: var(--blue);
+    font-family: var(--nunito);
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .infos-content .card p:nth-child(3) {
+    color: var(--blue);
+    font-family: var(--nunito);
+    font-size: 1.1rem;
+    width: 63%;
+    padding: 0.5rem 0.5rem;
+    background-color: var(--yellow);
+  }
+  
+  .map-container {
+    min-height: 200px;
+    width: 100%;
+    height: 400px;
+  }
+  .map-content {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    justify-content: space-around;
+  }
+  
+  .map-container .map-content .ecole-img {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1000px;
+    border: solid 2px var(--blue);
+  }
+  
+  .map-container .map-content h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 95%;
+    right: 66%;
+    text-align: center;
+    color: var(--blue);
+    font-family: var(--roboto);
+    font-size: 1.3rem;
+  }
+  
+  .map-container .map-content iframe {
+    border: solid 2px var(--blue);
+  }
+  
+  /* .contact-container {
+    height: 100px;
+    background-color: var(--light-gray);
+    margin: 3rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-container a {
+    padding: 1.3rem 0;
+    border: solid 2px var(--blue);
+    width: 15%;
+    margin: 0 auto;
+    font-family: var(--roboto);
+    cursor: pointer;
+  }
+  .contact-container a:hover{
+    border: 2px #0656b1 solid;
+  }
+  
+  .contact-container .content p {
+    color: var(--blue);
+  }
+  .contact-container a:hover p {
+    color: #0656b1;
+  } */
+  
+  .contact-container {
+    background-color: var(--light-gray);
+    height: 100px;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-container-title {
+    border: 2px var(--blue) solid;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.3rem 1.3rem;
+    cursor: pointer;
+  }
+  
+  .contact-container-title:hover {
+    border: 2px #0656b1 solid;
+  }
+  .contact-container-title:hover p {
+    color: #0656b1;
+  }
+  
+  .contact-container-title p {
+    font-size: 1.1rem;
+    font-family: var(--roboto);
+    color: var(--blue);
+  }
+  
+  /*! MEDIA QUERIES */
+  
+  @media only screen and (max-width: 1240px) {
+    .map-container .map-content .ecole-img {
+      height: 210px;
+      width: 210px;
+    }
+  
+    .map-container .map-content iframe {
+      border: solid 2px var(--blue);
+      height: 280px;
+      width: 550px;
+    }
+  
+    .map-container .map-content h4 {
+      bottom: 0;
+      left: 0;
+      top: 90%;
+      right: 70%;
+      font-size: 1.3rem;
+    }
+  
+    .infos-content .card p:nth-child(3) {
+      width: 76%;
+    }
+  
+  
+    .nixt {
+      
+      right: 13rem;
+    
+    }
+    
+    .priv {
+      left: 13rem;
+   
+  }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .map-container .map-content .ecole-img {
+      height: 180px;
+      width: 180px;
+    }
+  
+    .map-container .map-content iframe {
+      border: solid 2px var(--blue);
+      height: 250px;
+      width: 480px;
+    }
+  
+    .map-container .map-content h4 {
+      bottom: 0;
+      left: 0;
+      top: 85%;
+      right: 71%;
+      font-size: 1.2rem;
+    }
+  
+    /* .contact-container {
+      height: 100px;
+      margin: 3rem 0;
+    }
+  
+    .contact-container a {
+      width: 20%;
+    }
+  
+    .contact-container .content {
+      padding: 1.3rem 0;
+      width: 50%;
+      margin: 0 auto;
+    } */
+  }
+  
+  @media only screen and (max-width: 1080px) {
+    .infos-content,
+    .filiere-container,
+    .ecole-title,
+    .map-content .map-content {
+      width: 85%;
+    }
+  
+    .filiere-content {
+      width: 100%;
+    }
+  
+    .nixt {
+      
+      right: 6rem;
+    
+    }
+    
+    .priv {
+      left: 6rem;
+   
+  }
+  }
+  
+  @media only screen and (max-width: 980px) {
+    .map-container {
+      height: 500px;
+    }
+  
+    .map-container .map-content {
+      display: flex;
+      width: 70%;
+      margin: 0 auto;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .map-container .map-content iframe {
+      padding: 5rem 0;
+    }
+    .map-container .map-content .ecole-img {
+      height: 180px;
+      width: 180px;
+    }
+  
+    .map-content {
+      justify-content: space-between;
+    }
+  
+    .map-container .map-content iframe {
+      border: solid 2px var(--blue);
+      height: 400px;
+      width: 480px;
+    }
+  
+    .map-container .map-content h4 {
+      bottom: 0;
+      left: 25%;
+      top: 35%;
+      right: 73%;
+      width: 50%;
+      font-size: 1.2rem;
+    }
+  
+    .infos-content,
+    .filiere-container,
+    .ecole-title,
+    .map-content .map-content {
+      width: 85%;
+    }
+  
+    .infos-content .card.message p:nth-child(3) {
+      width: auto;
+      padding: 1rem 0.5rem;
+    }
+  
+    .infos-content .card p:nth-child(3) {
+      width: 75%;
+    }
+  
+    .infos-container {
+      height: 350px;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  
+    .ecole-title p {
+      font-size: 1.5rem;
+      width: 75%;
+      text-align: center;
+    }
+  
+    .ecole-title .ecole-content h3 {
+      padding: 0.5rem 0;
+      width: 75%;
+    }
+  
+    .contact-container {
+      height: 90px;
+    }
+  
+    .contact-container .content {
+      padding: 1rem 0;
+    }
+    .contact-container {
+      height: 90px;
+    }
+  
+    .contact-container-title {
+      padding: 1rem 1rem;
+    }
+  
+    .contact-container-title p {
+      font-size: 1.1rem;
+      font-family: var(--roboto);
+      color: var(--blue);
+    }
+  
+    .specialite h4 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .filiere-container {
+      height: 580px;
+    }
+    .filiere-container,
+    .ecole-content h3 {
+      font-size: 1.5rem;
+    }
+    .filiere-container .specialite .content .section {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  
+    .filiere-container .specialite .content .section .h4 {
+      width: 55%;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .filiere-container .specialite .content .section .h4.s {
+      width: 35%;
+    }
+  
+    .filiere-container .specialite .content .section .h4.t {
+      width: 35%;
+    }
+  
+    .filiere-container .specialite .content .section .p {
+      margin: 0 auto;
+    }
+  
+    .filiere-container .specialite .btn {
+      bottom: -8%;
+      left: 36%;
+    }
+  
+    .infos-container {
+      min-height: 700px;
+      height: auto;
+      margin-top: 3rem;
+    }
+  
+    .infos-content {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      margin-top: 1.5rem;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+    }
+  
+    .infos-content .card {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 1.5rem;
+      width: 100%;
+    }
+  
+    .infos-content .card p,
+    i {
+      margin-bottom: 2rem;
+    }
+  
+    .infos-content .card p {
+      margin-bottom: 2rem;
+    }
+  
+    .contact-container .content {
+      padding: 1.3rem 0;
+      width: 33%;
+      margin: 0 auto;
+    }
+  
+    .ecole-title .ecole-content h3 {
+      padding: 0.5rem 0;
+      width: 55%;
+    }
+  
+    .ecole-title .title {
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      width: 70%;
+    }
+  
+    .ecole-title p {
+      margin: 2.5rem 0;
+  
+      font-size: 1.5rem;
+    }
+  
+    .ecole-title button {
+      padding: 0.7rem 1.3rem;
+    }
+  
+    .contact-container {
+      height: 80px;
+    }
+  
+    .contact-container-title {
+      padding: 0.8rem 0.8rem;
+    }
+  
+    .contact-container-title p {
+      font-size: 1rem;
+    }
+    .filiere-container{
+      height: 850px;
+    }
+  
+    .filiere-content{
+      
+    height: 70%;
+    }
+  
+    .filiere-container .specialite {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .specialite h4 {
+   
+      margin-right: 0rem;
+      width: 100%;
+      border-bottom: 2px white solid;
+    }
+  
+    .filiere-content .content {
+  
+      border-top: none;
+    }
+  
+  
+    
+    .d-content {
+      flex-wrap: wrap;
+      height: 80%;
+      width: 100%;
+      }
+  
+      .d-content p{
+      
+        width: 100%;
+        }
+    
+    
+      .d-content img {
+       height: 250px;
+        width:100%;
+      
+      }
+      .d-content.cn1 p {
+        margin-left: 0rem;
+       
+       
+      }
+      .d-content.cn2 {
+        margin-top: 1rem;
+        flex-direction: column-reverse;
+      }
+      .d-content.cn2 p{
+        padding-top: 1rem;
+        width: 100%;
+      }
+      .d-content.cn1 p{
+        padding-top: 1rem;
+        width: 100%;
+      }
+  
+      .domaine-content p {
+        font-size: 1rem;
+      }
+  
+      .d-content.cn2 img{
+        margin-left: 0rem;
+       
+      }
+  
+  
+  
+    .nixt {
+      
+      right: 4rem;
+    
+    }
+    
+    .priv {
+      left: 4rem;
+   
+  }
+  
+  .text-acc{
+    flex-direction: column;
+  }
+  
+  .text-acc img{
+    height: 17%;
+    width: 17%;
+    padding-bottom: 1rem;
+    
+  }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .infos-content,
+    .filiere-container,
+    .ecole-title,
+    .map-container {
+      width: 96%;
+     
+    }
+  
+    .map-content{
+      height: 100%;
+      width: 100% !important;
+    
+    }
+  
+    .ecole-title .ecole-content h3 {
+      padding: 0.5rem 0;
+      width: 55%;
+    }
+  
+    .ecole-title .title {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      width: 70%;
+    }
+  
+    .ecole-title p {
+      margin: 2.5rem 0;
+  
+      font-size: 1.3rem;
+    }
+  
+    .ecole-title button {
+      padding: 0.5rem 1rem;
+    }
+  
+    .filiere-container .specialite .content .section .h4 {
+      width: 60%;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .filiere-container .specialite .content .section .h4.s {
+      width: 42%;
+    }
+  
+    .filiere-container .specialite .content .section .h4.t {
+      width: 42%;
+    }
+  
+    .filiere-container .specialite .btn {
+      bottom: -5%;
+      left: 30%;
+    }
+  
+    .map-container .map-content h4 {
+      bottom: 0;
+      left: 25%;
+      top: 40%;
+      right: 73%;
+      width: 50%;
+      font-size: 1rem;
+    }
+  
+  
+    .map-container .map-content iframe {
+      height: 100% !important;
+      width: 90% ;
+      padding-bottom: 0;
+    }
+  
+    .infos-container .card.width p:nth-child(3) {
+      width: 50%;
+    }
+  
+    .infos-content .card.message p:nth-child(3) {
+      width: 50%;
+    }
+  
+    .contact-container {
+      height: 80px;
+    }
+  
+    .contact-container .content {
+      padding: 0.8rem 0;
+      width: 45%;
+    }
+  
+    .contact-container {
+      height: 70px;
+    }
+  
+    .contact-container-title {
+      padding: 0.6rem 0.6rem;
+    }
+  
+    .contact-container-title p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .infos-container .card.width p:nth-child(3) {
+      width: 60%;
+    }
+  
+    .infos-content .card.message p:nth-child(3) {
+      width: 68%;
+    }
+    .filiere-container .specialite .btn {
+      bottom: -5%;
+      left: 27%;
+    }
+  
+    .nixt {
+      
+      right: 2rem;
+    
+    }
+    
+    .priv {
+      left: 2rem;
+   
+  }
+  
+  .text-acc img{
+    height: 25%;
+    width: 25%;
+  }
+  }
+  
